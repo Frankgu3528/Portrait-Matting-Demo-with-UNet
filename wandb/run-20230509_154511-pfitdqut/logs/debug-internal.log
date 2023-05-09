@@ -1,0 +1,86 @@
+2023-05-09 15:45:11,651 INFO    StreamThr :998 [internal.py:wandb_internal():89] W&B internal server running at pid: 998, started at: 2023-05-09 15:45:11.651119
+2023-05-09 15:45:11,654 DEBUG   HandlerThread:998 [handler.py:handle_request():144] handle_request: status
+2023-05-09 15:45:11,656 INFO    WriterThread:998 [datastore.py:open_for_write():85] open: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_154511-pfitdqut/run-pfitdqut.wandb
+2023-05-09 15:45:11,659 DEBUG   SenderThread:998 [sender.py:send():375] send: header
+2023-05-09 15:45:11,660 DEBUG   SenderThread:998 [sender.py:send():375] send: run
+2023-05-09 15:45:11,662 INFO    SenderThread:998 [sender.py:_maybe_setup_resume():762] checking resume status for None/U-Net/pfitdqut
+2023-05-09 15:45:16,655 DEBUG   HandlerThread:998 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-09 15:45:21,657 DEBUG   HandlerThread:998 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-09 15:45:26,658 DEBUG   HandlerThread:998 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-09 15:45:31,659 DEBUG   HandlerThread:998 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-09 15:45:36,661 DEBUG   HandlerThread:998 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-09 15:45:41,662 DEBUG   HandlerThread:998 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-09 15:45:46,296 INFO    SenderThread:998 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/http/client.py", line 1373, in getresponse
+    response.begin()
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/http/client.py", line 319, in begin
+    version, status, reason = self._read_status()
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/http/client.py", line 280, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/ssl.py", line 1071, in recv_into
+    return self.read(nbytes, buffer)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/ssl.py", line 929, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/urllib3/connectionpool.py", line 451, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/urllib3/connectionpool.py", line 341, in _raise_timeout
+    self, url, "Read timed out. (read timeout=%s)" % timeout_value
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 285, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/wandb/sdk/lib/gql_request.py", line 55, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/requests/sessions.py", line 590, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=10)
+2023-05-09 15:45:46,664 DEBUG   HandlerThread:998 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-09 15:45:51,666 DEBUG   HandlerThread:998 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-09 15:45:56,668 DEBUG   HandlerThread:998 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-09 15:46:01,669 DEBUG   HandlerThread:998 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-09 15:46:06,672 DEBUG   HandlerThread:998 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-09 15:46:11,673 DEBUG   HandlerThread:998 [handler.py:handle_request():144] handle_request: cancel
+2023-05-09 15:46:11,674 DEBUG   HandlerThread:998 [handler.py:handle_request():144] handle_request: cancel
+2023-05-09 15:46:13,677 DEBUG   HandlerThread:998 [handler.py:handle_request():144] handle_request: shutdown
+2023-05-09 15:46:13,677 INFO    HandlerThread:998 [handler.py:finish():845] shutting down handler
+2023-05-09 15:46:14,674 INFO    WriterThread:998 [datastore.py:close():298] close: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_154511-pfitdqut/run-pfitdqut.wandb
+2023-05-09 15:46:19,970 DEBUG   SenderThread:998 [sender.py:send():384] Record cancelled: run
+2023-05-09 15:46:19,971 INFO    SenderThread:998 [sender.py:finish():1550] shutting down sender

@@ -1,0 +1,79 @@
+{
+    "os": "Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-debian-bullseye-sid",
+    "python": "3.7.15",
+    "heartbeatAt": "2023-05-05T03:13:48.779975",
+    "startedAt": "2023-05-05T03:13:46.592773",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "host": "LAPTOP-R2KJP021",
+    "username": "frank",
+    "executable": "/home/frank/miniconda3/envs/condatest/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3110.3990000000003,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3110.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3110.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3110.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3110.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3110.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3110.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3110.399,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 3110.399,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 250.92389297485352,
+        "used": 42.57807922363281
+    },
+    "gpu": "NVIDIA GeForce MX450",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce MX450",
+            "memory_total": 2147483648
+        }
+    ],
+    "memory": {
+        "total": 7.66009521484375
+    }
+}

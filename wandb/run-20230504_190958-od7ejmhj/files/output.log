@@ -1,0 +1,64 @@
+INFO: Starting training:
+        Epochs:          1
+        Batch size:      2
+        Learning rate:   1e-06
+        Training size:   1360
+        Validation size: 340
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Epoch 1/1:   8%|██▉                                   | 104/1360 [02:12<26:44,  1.28s/img, loss (batch)=nan]
+INFO: Saved interrupt

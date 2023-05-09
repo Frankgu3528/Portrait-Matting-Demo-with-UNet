@@ -1,0 +1,37 @@
+INFO: Starting training:
+        Epochs:          150
+        Batch size:      24
+        Learning rate:   0.0001
+        Training size:   1530
+        Validation size: 170
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: True
+Epoch 1/150:   0%|                                                                                | 0/1530 [00:12<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 194, in <module>
+    amp=args.amp)
+  File "train.py", line 92, in train_net
+    masks_pred = net(images)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/frank/mat/Modify-Pytorch-UNet-master/unet/unet_model.py", line 27, in forward
+    x2 = self.down1(x1)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/frank/mat/Modify-Pytorch-UNet-master/unet/unet_parts.py", line 39, in forward
+    return self.maxpool_conv(x)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/torch/nn/modules/container.py", line 204, in forward
+    input = module(input)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/torch/nn/modules/pooling.py", line 168, in forward
+    return_indices=self.return_indices)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/torch/_jit_internal.py", line 485, in fn
+    return if_false(*args, **kwargs)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/torch/nn/functional.py", line 782, in _max_pool2d
+    return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 352.00 MiB (GPU 0; 2.00 GiB total capacity; 1.60 GiB already allocated; 0 bytes free; 1.61 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

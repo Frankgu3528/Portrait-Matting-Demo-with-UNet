@@ -1,0 +1,39 @@
+INFO: Starting training:
+        Epochs:          1
+        Batch size:      4
+        Learning rate:   1e-06
+        Training size:   1360
+        Validation size: 340
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: False
+Epoch 1/1:   0%|                                                                                  | 0/1360 [00:06<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 196, in <module>
+    amp=args.amp)
+  File "train.py", line 94, in train_net
+    masks_pred = net(images)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/frank/mat/Modify-Pytorch-UNet-master/unet/unet_model.py", line 33, in forward
+    x = self.up3(x, x2)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/frank/mat/Modify-Pytorch-UNet-master/unet/unet_parts.py", line 68, in forward
+    return self.conv(x)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/frank/mat/Modify-Pytorch-UNet-master/unet/unet_parts.py", line 25, in forward
+    return self.double_conv(x)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/torch/nn/modules/container.py", line 204, in forward
+    input = module(input)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 463, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 460, in _conv_forward
+    self.padding, self.dilation, self.groups)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 30.00 MiB (GPU 0; 2.00 GiB total capacity; 1.62 GiB already allocated; 0 bytes free; 1.65 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

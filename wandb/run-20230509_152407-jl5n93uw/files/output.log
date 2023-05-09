@@ -1,0 +1,23 @@
+INFO: Starting training:
+        Epochs:          1
+        Batch size:      2
+        Learning rate:   1e-05
+        Training size:   1360
+        Validation size: 340
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  0.5
+        Mixed Precision: False
+Epoch 1/1:   0%|                                                                  | 0/1360 [00:02<?, ?img/s]
+Traceback (most recent call last):
+  File "train.py", line 196, in <module>
+    amp=args.amp)
+  File "train.py", line 98, in train_net
+    loss = criterion(masks_pred.long(), true_masks.long()) \
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/torch/nn/modules/loss.py", line 1176, in forward
+    label_smoothing=self.label_smoothing)
+  File "/home/frank/miniconda3/envs/condatest/lib/python3.7/site-packages/torch/nn/functional.py", line 3026, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(input, target, weight, _Reduction.get_enum(reduction), ignore_index, label_smoothing)
+RuntimeError: Expected floating point type for target with class probabilities, got Long

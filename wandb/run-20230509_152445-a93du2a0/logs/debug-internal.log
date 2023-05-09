@@ -1,0 +1,224 @@
+2023-05-09 15:24:45,854 INFO    StreamThr :515 [internal.py:wandb_internal():89] W&B internal server running at pid: 515, started at: 2023-05-09 15:24:45.854010
+2023-05-09 15:24:45,855 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: status
+2023-05-09 15:24:45,858 INFO    WriterThread:515 [datastore.py:open_for_write():85] open: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/run-a93du2a0.wandb
+2023-05-09 15:24:45,860 DEBUG   SenderThread:515 [sender.py:send():375] send: header
+2023-05-09 15:24:45,860 DEBUG   SenderThread:515 [sender.py:send():375] send: run
+2023-05-09 15:24:45,861 INFO    SenderThread:515 [sender.py:_maybe_setup_resume():762] checking resume status for None/U-Net/a93du2a0
+2023-05-09 15:24:46,941 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: check_version
+2023-05-09 15:24:46,955 INFO    SenderThread:515 [dir_watcher.py:__init__():219] watching files in: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files
+2023-05-09 15:24:46,956 INFO    SenderThread:515 [sender.py:_start_run_threads():1127] run started: a93du2a0 with start time 1683617085.850075
+2023-05-09 15:24:46,956 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 15:24:46,956 INFO    SenderThread:515 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 15:24:46,956 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: check_version
+2023-05-09 15:24:47,957 INFO    Thread-12 :515 [dir_watcher.py:_on_file_created():278] file/dir created: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/wandb-summary.json
+2023-05-09 15:24:48,093 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: run_start
+2023-05-09 15:24:48,137 DEBUG   HandlerThread:515 [system_info.py:__init__():31] System info init
+2023-05-09 15:24:48,137 DEBUG   HandlerThread:515 [system_info.py:__init__():46] System info init done
+2023-05-09 15:24:48,137 INFO    HandlerThread:515 [system_monitor.py:start():181] Starting system monitor
+2023-05-09 15:24:48,137 INFO    SystemMonitor:515 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-09 15:24:48,138 INFO    SystemMonitor:515 [interfaces.py:start():190] Started cpu monitoring
+2023-05-09 15:24:48,138 INFO    HandlerThread:515 [system_monitor.py:probe():201] Collecting system info
+2023-05-09 15:24:48,142 INFO    SystemMonitor:515 [interfaces.py:start():190] Started disk monitoring
+2023-05-09 15:24:48,143 INFO    SystemMonitor:515 [interfaces.py:start():190] Started gpu monitoring
+2023-05-09 15:24:48,143 INFO    SystemMonitor:515 [interfaces.py:start():190] Started memory monitoring
+2023-05-09 15:24:48,144 INFO    SystemMonitor:515 [interfaces.py:start():190] Started network monitoring
+2023-05-09 15:24:48,152 DEBUG   HandlerThread:515 [system_info.py:probe():195] Probing system
+2023-05-09 15:24:48,154 ERROR   gpu       :515 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-09 15:24:48,155 ERROR   gpu       :515 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-09 15:24:48,218 DEBUG   HandlerThread:515 [git.py:repo():40] git repository is invalid
+2023-05-09 15:24:48,218 DEBUG   HandlerThread:515 [system_info.py:probe():240] Probing system done
+2023-05-09 15:24:48,218 DEBUG   HandlerThread:515 [system_monitor.py:probe():210] {'os': 'Linux-5.15.90.1-microsoft-standard-WSL2-x86_64-with-debian-bullseye-sid', 'python': '3.7.15', 'heartbeatAt': '2023-05-09T07:24:48.153098', 'startedAt': '2023-05-09T07:24:45.845670', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'train.py', 'codePath': 'train.py', 'host': 'LAPTOP-R2KJP021', 'username': 'frank', 'executable': '/home/frank/miniconda3/envs/condatest/bin/python', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 3110.4000000000005, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 3110.4, 'min': 0.0, 'max': 0.0}, {'current': 3110.4, 'min': 0.0, 'max': 0.0}, {'current': 3110.4, 'min': 0.0, 'max': 0.0}, {'current': 3110.4, 'min': 0.0, 'max': 0.0}, {'current': 3110.4, 'min': 0.0, 'max': 0.0}, {'current': 3110.4, 'min': 0.0, 'max': 0.0}, {'current': 3110.4, 'min': 0.0, 'max': 0.0}, {'current': 3110.4, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 250.92389297485352, 'used': 41.83148193359375}, 'gpu': 'NVIDIA GeForce MX450', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce MX450', 'memory_total': 2147483648}], 'memory': {'total': 7.66009521484375}}
+2023-05-09 15:24:48,218 INFO    HandlerThread:515 [system_monitor.py:probe():211] Finished collecting system info
+2023-05-09 15:24:48,218 INFO    HandlerThread:515 [system_monitor.py:probe():214] Publishing system info
+2023-05-09 15:24:48,218 DEBUG   HandlerThread:515 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-05-09 15:24:48,219 DEBUG   HandlerThread:515 [system_info.py:_save_pip():67] Saving pip packages done
+2023-05-09 15:24:48,219 DEBUG   HandlerThread:515 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-05-09 15:24:48,956 INFO    Thread-12 :515 [dir_watcher.py:_on_file_created():278] file/dir created: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/conda-environment.yaml
+2023-05-09 15:24:48,957 INFO    Thread-12 :515 [dir_watcher.py:_on_file_created():278] file/dir created: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/requirements.txt
+2023-05-09 15:24:50,160 ERROR   gpu       :515 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-09 15:24:50,161 ERROR   gpu       :515 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-09 15:24:51,957 INFO    Thread-12 :515 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/conda-environment.yaml
+2023-05-09 15:24:52,020 DEBUG   HandlerThread:515 [system_info.py:_save_conda():86] Saving conda packages done
+2023-05-09 15:24:52,020 INFO    HandlerThread:515 [system_monitor.py:probe():216] Finished publishing system info
+2023-05-09 15:24:52,024 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: status_report
+2023-05-09 15:24:52,024 DEBUG   SenderThread:515 [sender.py:send():375] send: files
+2023-05-09 15:24:52,024 INFO    SenderThread:515 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-05-09 15:24:52,031 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-09 15:24:52,032 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: stop_status
+2023-05-09 15:24:52,165 ERROR   gpu       :515 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-09 15:24:52,166 ERROR   gpu       :515 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-09 15:24:52,313 DEBUG   SenderThread:515 [sender.py:send():375] send: telemetry
+2023-05-09 15:24:52,313 DEBUG   SenderThread:515 [sender.py:send():375] send: config
+2023-05-09 15:24:52,958 INFO    Thread-12 :515 [dir_watcher.py:_on_file_created():278] file/dir created: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/output.log
+2023-05-09 15:24:52,958 INFO    Thread-12 :515 [dir_watcher.py:_on_file_created():278] file/dir created: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/wandb-metadata.json
+2023-05-09 15:24:53,176 INFO    wandb-upload_0:515 [upload_job.py:push():137] Uploaded file /tmp/tmpbtg5c6y9wandb/w8onluf6-wandb-metadata.json
+2023-05-09 15:24:54,170 ERROR   gpu       :515 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-09 15:24:54,170 ERROR   gpu       :515 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-09 15:24:54,959 INFO    Thread-12 :515 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/output.log
+2023-05-09 15:24:56,180 ERROR   gpu       :515 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-09 15:24:56,180 ERROR   gpu       :515 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-09 15:24:56,316 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: status_report
+2023-05-09 15:24:58,186 ERROR   gpu       :515 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-09 15:24:58,186 ERROR   gpu       :515 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-09 15:24:58,667 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 15:24:58,668 DEBUG   SenderThread:515 [sender.py:send():375] send: history
+2023-05-09 15:24:58,668 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 15:24:58,670 INFO    SenderThread:515 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 15:24:58,960 INFO    Thread-12 :515 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/wandb-summary.json
+2023-05-09 15:25:00,046 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 15:25:00,047 DEBUG   SenderThread:515 [sender.py:send():375] send: history
+2023-05-09 15:25:00,047 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 15:25:00,048 INFO    SenderThread:515 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 15:25:00,192 ERROR   gpu       :515 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-09 15:25:00,192 ERROR   gpu       :515 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-09 15:25:00,961 INFO    Thread-12 :515 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/output.log
+2023-05-09 15:25:00,961 INFO    Thread-12 :515 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/wandb-summary.json
+2023-05-09 15:25:01,143 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 15:25:01,144 DEBUG   SenderThread:515 [sender.py:send():375] send: history
+2023-05-09 15:25:01,145 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 15:25:01,147 INFO    SenderThread:515 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 15:25:01,534 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: status_report
+2023-05-09 15:25:01,961 INFO    Thread-12 :515 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/wandb-summary.json
+2023-05-09 15:25:02,196 ERROR   gpu       :515 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-09 15:25:02,197 ERROR   gpu       :515 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-09 15:25:02,240 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-09 15:25:02,241 DEBUG   SenderThread:515 [sender.py:send():375] send: history
+2023-05-09 15:25:02,242 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: summary_record
+2023-05-09 15:25:02,242 INFO    SenderThread:515 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 15:25:02,734 DEBUG   SenderThread:515 [sender.py:send():375] send: exit
+2023-05-09 15:25:02,734 INFO    SenderThread:515 [sender.py:send_exit():598] handling exit code: 0
+2023-05-09 15:25:02,734 INFO    SenderThread:515 [sender.py:send_exit():600] handling runtime: 14
+2023-05-09 15:25:02,734 INFO    SenderThread:515 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 15:25:02,735 INFO    SenderThread:515 [sender.py:send_exit():606] send defer
+2023-05-09 15:25:02,735 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: defer
+2023-05-09 15:25:02,735 INFO    HandlerThread:515 [handler.py:handle_request_defer():170] handle defer: 0
+2023-05-09 15:25:02,735 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: defer
+2023-05-09 15:25:02,735 INFO    SenderThread:515 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-05-09 15:25:02,735 INFO    SenderThread:515 [sender.py:transition_state():626] send defer: 1
+2023-05-09 15:25:02,736 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: defer
+2023-05-09 15:25:02,736 INFO    HandlerThread:515 [handler.py:handle_request_defer():170] handle defer: 1
+2023-05-09 15:25:02,736 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: defer
+2023-05-09 15:25:02,736 INFO    SenderThread:515 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-05-09 15:25:02,736 INFO    SenderThread:515 [sender.py:transition_state():626] send defer: 2
+2023-05-09 15:25:02,736 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: defer
+2023-05-09 15:25:02,736 INFO    HandlerThread:515 [handler.py:handle_request_defer():170] handle defer: 2
+2023-05-09 15:25:02,736 INFO    HandlerThread:515 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-09 15:25:02,736 DEBUG   SystemMonitor:515 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-09 15:25:02,737 INFO    HandlerThread:515 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-09 15:25:02,737 DEBUG   SystemMonitor:515 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-09 15:25:02,737 INFO    HandlerThread:515 [interfaces.py:finish():202] Joined disk monitor
+2023-05-09 15:25:02,738 DEBUG   SystemMonitor:515 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-09 15:25:02,748 ERROR   gpu       :515 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-05-09 15:25:02,748 INFO    HandlerThread:515 [interfaces.py:finish():202] Joined gpu monitor
+2023-05-09 15:25:02,748 INFO    HandlerThread:515 [interfaces.py:finish():202] Joined memory monitor
+2023-05-09 15:25:02,748 INFO    HandlerThread:515 [interfaces.py:finish():202] Joined network monitor
+2023-05-09 15:25:02,749 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: defer
+2023-05-09 15:25:02,749 INFO    SenderThread:515 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-05-09 15:25:02,749 INFO    SenderThread:515 [sender.py:transition_state():626] send defer: 3
+2023-05-09 15:25:02,749 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: defer
+2023-05-09 15:25:02,750 DEBUG   SenderThread:515 [sender.py:send():375] send: stats
+2023-05-09 15:25:02,750 INFO    HandlerThread:515 [handler.py:handle_request_defer():170] handle defer: 3
+2023-05-09 15:25:02,751 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: defer
+2023-05-09 15:25:02,751 INFO    SenderThread:515 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-05-09 15:25:02,751 INFO    SenderThread:515 [sender.py:transition_state():626] send defer: 4
+2023-05-09 15:25:02,751 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: defer
+2023-05-09 15:25:02,751 INFO    HandlerThread:515 [handler.py:handle_request_defer():170] handle defer: 4
+2023-05-09 15:25:02,751 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: defer
+2023-05-09 15:25:02,751 INFO    SenderThread:515 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-05-09 15:25:02,751 INFO    SenderThread:515 [sender.py:transition_state():626] send defer: 5
+2023-05-09 15:25:02,751 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: defer
+2023-05-09 15:25:02,751 INFO    HandlerThread:515 [handler.py:handle_request_defer():170] handle defer: 5
+2023-05-09 15:25:02,752 DEBUG   SenderThread:515 [sender.py:send():375] send: summary
+2023-05-09 15:25:02,753 INFO    SenderThread:515 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-09 15:25:02,754 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: defer
+2023-05-09 15:25:02,754 INFO    SenderThread:515 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-05-09 15:25:02,754 INFO    SenderThread:515 [sender.py:transition_state():626] send defer: 6
+2023-05-09 15:25:02,754 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: defer
+2023-05-09 15:25:02,754 INFO    HandlerThread:515 [handler.py:handle_request_defer():170] handle defer: 6
+2023-05-09 15:25:02,754 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: defer
+2023-05-09 15:25:02,754 INFO    SenderThread:515 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-05-09 15:25:02,758 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: status_report
+2023-05-09 15:25:02,961 INFO    Thread-12 :515 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/output.log
+2023-05-09 15:25:02,962 INFO    Thread-12 :515 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/wandb-summary.json
+2023-05-09 15:25:03,050 INFO    SenderThread:515 [sender.py:transition_state():626] send defer: 7
+2023-05-09 15:25:03,051 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: defer
+2023-05-09 15:25:03,051 INFO    HandlerThread:515 [handler.py:handle_request_defer():170] handle defer: 7
+2023-05-09 15:25:03,051 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: defer
+2023-05-09 15:25:03,051 INFO    SenderThread:515 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-05-09 15:25:03,734 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-09 15:25:03,962 INFO    Thread-12 :515 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/config.yaml
+2023-05-09 15:25:04,331 INFO    SenderThread:515 [sender.py:transition_state():626] send defer: 8
+2023-05-09 15:25:04,332 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: poll_exit
+2023-05-09 15:25:04,332 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: defer
+2023-05-09 15:25:04,332 INFO    HandlerThread:515 [handler.py:handle_request_defer():170] handle defer: 8
+2023-05-09 15:25:04,333 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: defer
+2023-05-09 15:25:04,333 INFO    SenderThread:515 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-05-09 15:25:04,334 INFO    SenderThread:515 [sender.py:transition_state():626] send defer: 9
+2023-05-09 15:25:04,334 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: defer
+2023-05-09 15:25:04,334 INFO    HandlerThread:515 [handler.py:handle_request_defer():170] handle defer: 9
+2023-05-09 15:25:04,334 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: defer
+2023-05-09 15:25:04,334 INFO    SenderThread:515 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-05-09 15:25:04,334 INFO    SenderThread:515 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-05-09 15:25:04,735 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-09 15:25:04,962 INFO    Thread-12 :515 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/output.log
+2023-05-09 15:25:04,963 INFO    SenderThread:515 [dir_watcher.py:finish():395] scan: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files
+2023-05-09 15:25:04,963 INFO    SenderThread:515 [dir_watcher.py:finish():409] scan save: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/output.log output.log
+2023-05-09 15:25:04,963 INFO    SenderThread:515 [dir_watcher.py:finish():409] scan save: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/conda-environment.yaml conda-environment.yaml
+2023-05-09 15:25:04,963 INFO    SenderThread:515 [dir_watcher.py:finish():409] scan save: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/config.yaml config.yaml
+2023-05-09 15:25:04,967 INFO    SenderThread:515 [dir_watcher.py:finish():409] scan save: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/wandb-metadata.json wandb-metadata.json
+2023-05-09 15:25:04,967 INFO    SenderThread:515 [dir_watcher.py:finish():409] scan save: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/requirements.txt requirements.txt
+2023-05-09 15:25:04,968 INFO    SenderThread:515 [dir_watcher.py:finish():409] scan save: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/wandb-summary.json wandb-summary.json
+2023-05-09 15:25:04,970 INFO    SenderThread:515 [sender.py:transition_state():626] send defer: 10
+2023-05-09 15:25:04,971 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: poll_exit
+2023-05-09 15:25:04,971 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: defer
+2023-05-09 15:25:04,973 INFO    HandlerThread:515 [handler.py:handle_request_defer():170] handle defer: 10
+2023-05-09 15:25:04,976 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: defer
+2023-05-09 15:25:04,976 INFO    SenderThread:515 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-05-09 15:25:04,976 INFO    SenderThread:515 [file_pusher.py:finish():167] shutting down file pusher
+2023-05-09 15:25:05,708 INFO    wandb-upload_0:515 [upload_job.py:push():137] Uploaded file /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/output.log
+2023-05-09 15:25:05,736 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-09 15:25:05,736 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: poll_exit
+2023-05-09 15:25:05,889 INFO    wandb-upload_2:515 [upload_job.py:push():137] Uploaded file /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/conda-environment.yaml
+2023-05-09 15:25:06,031 INFO    wandb-upload_5:515 [upload_job.py:push():137] Uploaded file /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/wandb-summary.json
+2023-05-09 15:25:06,081 INFO    wandb-upload_4:515 [upload_job.py:push():137] Uploaded file /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/requirements.txt
+2023-05-09 15:25:06,098 INFO    wandb-upload_3:515 [upload_job.py:push():137] Uploaded file /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/files/config.yaml
+2023-05-09 15:25:06,298 INFO    Thread-11 :515 [sender.py:transition_state():626] send defer: 11
+2023-05-09 15:25:06,299 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: defer
+2023-05-09 15:25:06,299 INFO    HandlerThread:515 [handler.py:handle_request_defer():170] handle defer: 11
+2023-05-09 15:25:06,300 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: defer
+2023-05-09 15:25:06,300 INFO    SenderThread:515 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-05-09 15:25:06,300 INFO    SenderThread:515 [file_pusher.py:join():172] waiting for file pusher
+2023-05-09 15:25:06,300 INFO    SenderThread:515 [sender.py:transition_state():626] send defer: 12
+2023-05-09 15:25:06,300 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: defer
+2023-05-09 15:25:06,300 INFO    HandlerThread:515 [handler.py:handle_request_defer():170] handle defer: 12
+2023-05-09 15:25:06,300 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: defer
+2023-05-09 15:25:06,300 INFO    SenderThread:515 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-05-09 15:25:06,705 INFO    SenderThread:515 [sender.py:transition_state():626] send defer: 13
+2023-05-09 15:25:06,705 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: defer
+2023-05-09 15:25:06,705 INFO    HandlerThread:515 [handler.py:handle_request_defer():170] handle defer: 13
+2023-05-09 15:25:06,705 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: defer
+2023-05-09 15:25:06,705 INFO    SenderThread:515 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-05-09 15:25:06,705 INFO    SenderThread:515 [sender.py:transition_state():626] send defer: 14
+2023-05-09 15:25:06,705 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: defer
+2023-05-09 15:25:06,706 INFO    HandlerThread:515 [handler.py:handle_request_defer():170] handle defer: 14
+2023-05-09 15:25:06,706 DEBUG   SenderThread:515 [sender.py:send():375] send: final
+2023-05-09 15:25:06,706 DEBUG   SenderThread:515 [sender.py:send():375] send: footer
+2023-05-09 15:25:06,706 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: defer
+2023-05-09 15:25:06,706 INFO    SenderThread:515 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-05-09 15:25:06,706 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-09 15:25:06,707 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: poll_exit
+2023-05-09 15:25:06,707 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-09 15:25:06,707 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: poll_exit
+2023-05-09 15:25:06,708 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: server_info
+2023-05-09 15:25:06,708 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: get_summary
+2023-05-09 15:25:06,708 DEBUG   SenderThread:515 [sender.py:send_request():402] send_request: server_info
+2023-05-09 15:25:06,711 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: sampled_history
+2023-05-09 15:25:07,330 INFO    MainThread:515 [wandb_run.py:_footer_history_summary_info():3469] rendering history
+2023-05-09 15:25:07,330 INFO    MainThread:515 [wandb_run.py:_footer_history_summary_info():3501] rendering summary
+2023-05-09 15:25:07,330 INFO    MainThread:515 [wandb_run.py:_footer_sync_info():3428] logging synced files
+2023-05-09 15:25:07,331 DEBUG   HandlerThread:515 [handler.py:handle_request():144] handle_request: shutdown
+2023-05-09 15:25:07,331 INFO    HandlerThread:515 [handler.py:finish():845] shutting down handler
+2023-05-09 15:25:07,708 INFO    WriterThread:515 [datastore.py:close():298] close: /home/frank/mat/Modify-Pytorch-UNet-master/wandb/run-20230509_152445-a93du2a0/run-a93du2a0.wandb
+2023-05-09 15:25:08,330 INFO    SenderThread:515 [sender.py:finish():1550] shutting down sender
+2023-05-09 15:25:08,330 INFO    SenderThread:515 [file_pusher.py:finish():167] shutting down file pusher
+2023-05-09 15:25:08,330 INFO    SenderThread:515 [file_pusher.py:join():172] waiting for file pusher
