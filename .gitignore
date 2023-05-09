@@ -6,3 +6,7 @@ checkpoints/
 *.jpg
 venv/
 .idea/
+*.png
+*.log
+*.yaml
+wandb/
