@@ -1,5 +1,6 @@
 # Portrait Matting Demo with U-Net
 
+<img src="https://frank-first.oss-cn-hangzhou.aliyuncs.com/images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_202305101159521.jpg" alt="微信图片_202305101159521" style="zoom:35%;" />
 ## Description
 customized U-net implementation with pytorch, trained for portrait matting. 
 
@@ -7,7 +8,23 @@ customized U-net implementation with pytorch, trained for portrait matting.
 ## Usage
 **Note : Use Python 3.6 or newer**
 
+Put Your train data in `./train/imgs` and `./train/masks`,Put your test data in `./test`
+```
+.
+├── __pycache__
+├── checkpoints
+├── data
+│   ├── imgs
+│   └── masks
+├── output
+├── scripts
+├── test
+├── unet
+│   └── __pycache__
+└── utils
+    └── __pycache__
 
+```
 ### Training
 
 ```console

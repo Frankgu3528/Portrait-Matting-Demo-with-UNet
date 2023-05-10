@@ -1,6 +1,7 @@
 *.pyc
 data/
 __pycache__/
+test/
 checkpoints/
 *.pth
 *.jpg
