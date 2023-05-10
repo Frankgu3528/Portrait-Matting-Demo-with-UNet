@@ -1,7 +1,7 @@
 # Portrait Matting Demo with U-Net
 customized U-net implemcentation with pytorch, trained for portrait matting. 
 
-<img src="test/cc.png" width="60%">
+<img src="test/cc.png" width="80%">
 
 ## Usage
 **Note : Use Python 3.6 or newer**
