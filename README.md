@@ -2,6 +2,7 @@
 customized U-net implementation with pytorch, trained for portrait matting. 
 
 <img src="test/cover.png" width="60%">
+
 ## Usage
 **Note : Use Python 3.6 or newer**
 
