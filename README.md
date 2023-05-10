@@ -1,11 +1,9 @@
 # Portrait Matting Demo with U-Net
-
-<img src="https://frank-first.oss-cn-hangzhou.aliyuncs.com/images/image-20230510120307117.png" alt="image-20230510120307117" style="zoom: 33%;" />
-
-## Description
 customized U-net implementation with pytorch, trained for portrait matting. 
 
 
+
+	<img src="test/cover.png" width="60%">
 ## Usage
 **Note : Use Python 3.6 or newer**
 
